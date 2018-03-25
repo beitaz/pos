@@ -3,24 +3,19 @@
 // of the page.
 
 import React from 'react'
-import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
+import HelloWorld from 'components/HelloWorld';
 
-const Hello = props => (
-  <div>Hello {props.name}!</div>
+const App = props => (
+  <HelloWorld greeting={props.name}/>
 )
 
-Hello.defaultProps = {
+App.defaultProps = {
   name: 'David'
 }
 
-Hello.propTypes = {
+App.propTypes = {
   name: PropTypes.string
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(
-    <Hello name="React" />,
-    document.body.appendChild(document.createElement('div')),
-  )
-})
+export default App
