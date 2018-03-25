@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'figaro'
+gem 'react-rails'
 gem 'webpacker'
 
 group :development, :test do
